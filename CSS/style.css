@@ -1542,7 +1542,7 @@ METRICAS
 
 @media (max-width: 390px) {
     .h2-agenda{
-        font-size: 20px ;
+        font-size: 30px ;
     }
     .info-expo-movil {
         flex-direction: column;
