@@ -365,11 +365,164 @@ header {
 
 /*===================== FIN Estilos del contenido Banner ====================*/
 
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+AGENDA
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
 
+/* TEXTOS DE LA AGENDA */
+.h2-agenda {
+    font-family: var(--Fuente-H2);
+    font-size: 48px;
+    font-weight: var(--Font-Bold);
+    text-transform: uppercase;
+}
 
+.nov {
+    font-family: var(--Fuente-H2);
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    transform: rotate(-90deg);
+}
 
+.numerosAgenda {
+    font-family: var(--Fuente-Parrafos);
+    font-size: 96px;
+    color: white;
+    background-color: #6c8c4a;
+    margin-bottom: 0px !important;
+}
 
+.agenda__parrafo {
+    font-family: var(--Fuente-Parrafos);
+    font-size: 30px;
+    font-weight: 500;
+}
 
+/* ESTILOS DE LA AGENDA */
+.agenda__info p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#agenda {
+    padding: 50px 240px 70px 240px;
+    background-color: #FCF7F1;
+    position: relative;
+}
+
+.agenda__container {
+    gap: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+/* GRANOS CAFE */
+.granos__cafes {
+    position: absolute;
+}
+.cafesitos1 {
+    top: 0px;
+    right: 60px;
+    width: 100px;
+    transform: rotate(51.557deg);
+}
+
+.cafesitos2 {
+    bottom: 0px;
+    left: 170px;
+    width: 116px;
+    transform: rotate(-100deg);
+}
+.cafesitos3 {
+    bottom: 90px;
+    left: 150px;
+    width: 70px;
+    transform: rotate( 10deg);
+}
+
+/* ESTILOS DE LAS CARTAS */
+/* carta generalidades */
+.generalidades {
+    background: url(../img/Generalidades.png);
+    background-size: cover;
+    width: 1009px;
+    height: 170px;
+    padding: 0;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 25%;
+}
+
+.button__agenda {
+    background-color: #6c8c4ac8;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 10px 0px 20px 0px;
+    width: 610px;
+    border-radius: 100px 100px 15px 15px;
+}
+
+/* demas cartas */
+.carta__agenda {
+    position: relative;
+    text-align: center;
+    width: 1009px;
+    height: 170px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.fecha {
+    display: flex;
+    padding: 12px 50px;
+}
+
+.fecha p {
+    padding-left: 15px;
+    padding-right: 35px;
+    border-radius: 0px 75px 75px 0px;
+}
+
+.carta__agenda h3 {
+    position: absolute;
+    left: 0px;
+    top: 35%;
+}
+
+.carta__agenda .button__agenda {
+    position: absolute;
+    left: 270px;
+    bottom: 0;
+}
+
+.Nov12 {
+    background: url(../img/Noviembre12.png);
+    background-size: cover;
+    background-position: center;
+    margin-right: 10%;
+
+}
+
+.Nov13 {
+    background: url(../img/Noviembre13.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 10%;
+}
+
+.Nov14 {
+    background: url(../img/Noviembre14.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 25%;
+}
 /* 
 CARACTERISTICAS DE LA SECCION DE EXPOSITORES */
 .botones-expo {
@@ -716,6 +869,66 @@ METRICAS
     font-family: var(--Fuente-Parrafos);
     font-weight: var(--Font-Bold);
 }
+
+
+/* ================= MEDIA QUERY ================ */
+@media (max-width: 1467px) {
+    h2 {
+        font-size: 38px;
+    }
+
+    .nov {
+        font-size: 34px;
+    }
+
+    .agenda__parrafo {
+        font-size: 19px;
+    }
+
+    .carta__agenda h3 {
+        right: 533px;
+    }
+
+    .numerosAgenda {
+        font-size: 64px;
+    }
+
+    #agenda {
+        padding: 50px 16px 70px 16px;
+    }
+
+    .generalidades {
+        width: 633px;
+        height: 116px;
+    }
+
+    .carta__agenda {
+        width: 633px;
+        height: 116px;
+    }
+
+    .button__agenda {
+        width: 355px;
+        height: 40px;
+        padding: 5px 0px 15px 0px;
+    }
+
+    .carta__agenda .button__agenda {
+        left: 190px;
+    }
+    .cafesitos1 {
+        width: 80px;
+    }
+    
+    .cafesitos2 {
+        width: 86px;
+    }
+    .cafesitos3 {
+        width: 50px;
+    }
+}
+
+
 
 
 /*========================================= MEDIAQUERY TAMANO TABLET/ 1024PX - 768PX =========================================*/
@@ -1165,6 +1378,21 @@ METRICAS
     }
 }
 
+@media (max-width: 900px) {
+    .agenda__container {
+        justify-content: center;
+    }
+
+    .Nov12,
+    .Nov13,
+    .Nov14,
+    .generalidades {
+        margin: initial;
+    }
+    .granos__cafes{
+        display: none;
+    }
+}
 
 @media (max-width: 800px) {
     .info-expositores {
@@ -1222,7 +1450,28 @@ METRICAS
 .EXPOSITORES-movil {
     width: 100%;
 }
+@media (max-width: 600px) {
+    .button__agenda {
+        width: 250px;
+    }
 
+    .carta__agenda .button__agenda {
+        left: 70px;
+    }
+
+    .numerosAgenda {
+        font-size: 35px;
+    }
+
+    .fecha p {
+        padding: 0px 25px 0px 10px;
+    }
+
+    .carta__agenda h3 {
+        top: 77px;
+        left: 50px;
+    }
+}
 @media (max-width: 550px) {
     .card-expositores-movil {
         background-color: #ca873b;

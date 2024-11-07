@@ -9,8 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/sweetalert2.css">
     <!-- LINK PARA CSS -->
     <link rel="stylesheet" href="./CSS/style.css">
+
 
 
 </head>
@@ -161,7 +163,61 @@
         <!-- INICIO SECCION QUIENES SOMOS -->
         <!-- CIERRE SECCION QUIENES SOMOS -->
         <!-- INICIO SECCION AGENDA -->
-        
+        <!-- ========== AGENDA ========== -->
+        <section id="agenda" class="container-fluid">
+            <article>
+                <div class="row agenda__info">
+                    <div class="col-12">
+                        <h2 class="text-center uppercase h2-agenda">
+                            Agenda
+                        </h2>
+                        <p class="agenda__parrafo text-center">
+                            En esta sección se detallan las actividades programadas para el Congreso Nacional de Cultivo
+                            de
+                            Café, con el objetivo de asegurar su participación en cada una de ellas.
+                        </p>
+                    </div>
+                </div>
+                <div class="row agenda__container">
+                    <!-- Carta con informacion general -->
+                    <div class="generalidades">
+                        <h2 class="text-center text-white mt-3 h2-agenda">
+                            generalidades
+                        </h2>
+                        <a href="#" class="text-uppercase agenda__parrafo button__agenda" id="button__generalidades">Ver
+                            información</a>
+                    </div>
+                    <!-- Cartas de los dias -->
+                    <div class="bg-danger carta__agenda Nov12">
+                        <h3 class="nov">nov</h3>
+                        <div class="fecha">
+                            <p class="numerosAgenda">12</p>
+                        </div>
+                        <a href="#" id="Nov12" class="text-uppercase agenda__parrafo button__agenda">Ver
+                            información</a>
+                    </div>
+                    <div class="bg-danger carta__agenda Nov13">
+                        <h3 class="nov">nov</h3>
+                        <div class="fecha">
+                            <p class="numerosAgenda">13</p>
+                        </div>
+                        <a href="#" id="Nov13" class="text-uppercase agenda__parrafo button__agenda">Ver
+                            información</a>
+                    </div>
+                    <div class="bg-danger carta__agenda Nov14">
+                        <h3 class="nov">nov</h3>
+                        <div class="fecha">
+                            <p class="numerosAgenda">14</p>
+                        </div>
+                        <a href="#" id="Nov14" class="col text-uppercase agenda__parrafo button__agenda">Ver
+                            información</a>
+                    </div>
+                </div>
+            </article>
+            <img src="img/grano__cafe.png" class="granos__cafes cafesitos1" alt="granos__cafe">
+            <img src="img/grano__cafe.png" class="granos__cafes cafesitos2" alt="granos__cafe">
+            <img src="img/grano__cafe.png" class="granos__cafes cafesitos3" alt="granos__cafe">
+        </section>
         <!-- CIERRE SECCION AGENDA -->
         <!-- INICIO SECCION EXPOSITORES -->
         <section class="EXPOSITORES" id="expositores">
@@ -1122,6 +1178,9 @@
         crossorigin="anonymous"></script>
     <!-- SCRIPT DE JAVASCRIPT -->
     <script src="JS/main.js"></script>
+    <script src="JS/sweetalert2.js"></script>
+    <script src="JS/agenda.js"></script>
+    <script src="JS/agenda.js"></script>
 </body>
 
 </html>
