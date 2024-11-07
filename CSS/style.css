@@ -1166,6 +1166,15 @@ footer a{
         border-radius: 11px !important;
     }
     /*=== FIN RAYAS DEL CAROUSEL ===*/
+    /* /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ */
+    /* .EXPOSITORES */
+     /* /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ */
+    .card-expositores{
+        height: 400px;
+    }
+
+
+
     /****************** MEDIA QUERRY DE TABLET metricas ***************/
     .alcance-section h2{
         font-size: 30px;
