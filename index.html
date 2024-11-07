@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congreso Nacional Del Café</title>
+    <!-- LINK PARA BOOTSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- LINK PARA CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+
+</head>
+
+<body>
+    <!-- INICIO HEADER -->
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-xl fixed-top nav_menu">
+            <div class="container">
+                <a class="navbar-brand" href="#inicio"><img id="logo" src="logo/logoCongreso.svg" alt="Logo Congreso Nacional Del Cafe"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav nav_options">
+                        <li class="nav-item">
+                            <a class="nav-link nav_direction" aria-current="page" href="#nosotros">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_direction" href="#agenda">AGENDA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_direction" href="#expositores">EXPOSITORES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_direction" href="#inquietudes">INQUIETUDES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_direction" href="galeria">GALERIA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- data-bs-ride="carousel" y data-bs-interval="5000" -->
+        <div class="container-fluid banner_content d-flex justify-content-center">
+            <div id="carouselExampleIndicators" class="carousel slide container container-md mx-auto">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active slider_position"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="slider_position"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="slider_position"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner articulo_carousel">
+
+
+                    <!--================= BANNER 1 ==========================-->
+                    <div class="carousel-item active">
+                        <div class="row carousel_content">
+                            <div class="grano_uno">
+                                <img src="img/grano1_arriba.png" alt="">
+                            </div>
+                            <div class="col-7 col-sm-4 img-banner-movil">
+                                <img src="ilustraciones/ilustracion_Fondo1.png" alt="Ilustracion Fondo"/>
+                            </div>
+                            <div class="col-5 texto-carousel">
+                                <h1 class="h1_banner">MANEJO <span class="texto_diferente">AGRONÓMICO</span> DEL CULTIVO</h1>
+                                <p class="p_banner">Actualizar y fortalecer las competencias técnicas de una población meta de 200 personas involucradas en la producción de café en Costa Rica, mediante estrategias metodológicas con la participación de expertos nacionales e internacionales.</p>
+                                
+                                <!-- Este texto solo se va a ver en tablet y movil -->
+                                <p class="p_banner_responsive">Actualizar y fortalecer las competencias técnicas de una población meta de 200 personas involucradas en la producción de café en Costa Rica...</p>
+                                <!-- Este texto solo se va a ver en tablet y movil -->
+
+                                <button class="boton_agenda" href="#agenda">Ver Agenda</button>
+                            </div>
+                            <div class="col-7 img-banner">
+                                <img src="ilustraciones/ilustracion_Fondo1.png" alt="Ilustracion Fondo"/>
+                            </div>
+                        </div>
+                        <div class="grano_dos">
+                            <img src="img/grano2_abajoIzquierda.png" alt="Grano De Cafe">
+                        </div>
+                        <div class="granos_juntos">
+                            <img src="img/granos3_juntosDerecha.png" alt="Granos de Cafe">
+                        </div>
+                        <div class="granos_responsive_tablet">
+                            <img src="img/garnosTablet.png" alt="Granos de Cafe">
+                        </div>
+                    </div>
+
+
+                    <!--============================= BANNER 2 ================================-->
+                    <div class="carousel-item articulo_carousel">
+                        <div class="row carousel_content">
+                            <div class="grano_uno_2">
+                                <img src="img/grano1_arriba.png" alt="">
+                            </div>
+                            <div class="col-6 banner_2">
+                                <img id="img_banner_2" src="ilustraciones/ilustracion_Fondo2.png" alt="Ilustracion Fondo"/>
+                            </div>
+                            <div class="col-6 texto_carousel_2">
+                                <h1 class="h1_banner">Adaptación al cambio <span class="texto_diferente">climático</span></h1>
+                                <button class="boton_agenda button_space" href="#agenda">Ver Agenda</button>
+                            </div>
+                        </div>
+                        <div class="grano_dos">
+                            <img src="img/grano2_abajoIzquierda.png" alt="Grano De Cafe">
+                        </div>
+                        <div class="granos_juntos_2">
+                            <img src="img/granos3_juntosDerecha.png" alt="Granos de Cafe">
+                        </div>
+                        <div class="granos_responsive_tablet">
+                            <img src="img/garnosTablet.png" alt="Granos de Cafe">
+                        </div>
+                    </div>
+
+
+                    <!--================================ BANNER 3 =================================================-->
+                    <div class="carousel-item articulo_carousel">
+                        <div class="row carousel_content ">
+                            <div class="grano_uno col-lg-1">
+                                <img  src="img/grano1_arriba.png" alt="">
+                            </div>
+                            <div class="col-6 img_responsive_movil_3">
+                                <img id="img_banner_3_movil" src="ilustraciones/ilustracion_Fondo3.png" alt="Ilustracion Fondo"/>
+                            </div>
+                            <div class="col-6 texto-carousel_3">
+                                <h1 class="h1_banner"><span class="texto_diferente_2">Comercialización</span> y financiamiento</h1>
+                                <button class="boton_agenda button_space_3" href="#agenda">Ver Agenda</button>
+                            </div>
+                            <div class="col-6">
+                                <img id="img_banner_3" src="ilustraciones/ilustracion_Fondo3.png" alt="Ilustracion Fondo"/>
+                            </div>
+                        </div>
+                        <div class="grano_dos_3">
+                            <img src="img/grano2_abajoIzquierda.png" alt="Grano De Cafe">
+                        </div>
+                        <div class="granos_juntos">
+                            <img src="img/granos3_juntosDerecha.png" alt="Granos de Cafe">
+                        </div>
+                        <div class="granos_responsive_tablet">
+                            <img src="img/garnosTablet.png" alt="Granos de Cafe">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <!-- FIN HEADER -->
+    <!-- INICIO MAIN -->
+    <main>
+        <!-- INICIO SECCION TEMATICAS -->
+        <!-- CIERRE SECCION TEMATICAS -->
+        <!-- INICIO SECCION QUIENES SOMOS -->
+        <!-- CIERRE SECCION QUIENES SOMOS -->
+        <!-- INICIO SECCION AGENDA -->
+        
+        <!-- CIERRE SECCION AGENDA -->
+        <!-- INICIO SECCION EXPOSITORES -->
+        <section class="EXPOSITORES" id="expositores">
+            <div class="container-xxl contendor-expositores-titu">
+                <div class="informacion-expositores">
+                    <h2 class="titulo-expositores">Expositores</h2>
+                    <p class="info-expositores">Reúne a expertos que compartirán conocimientos sobre avances
+                        tecnológicos, prácticas agronómicas, sostenibilidad y tendencias de mercado, aportando a la
+                        mejora de la producción y el posicionamiento del café costarricense.</p>
+                </div>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel  carrusel-expo slide carrusel-expo">
+                <div class="carousel-indicators botones-expo">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-expositores">
+                            <div class="card-expositores">
+                                <div class="img-expositores">
+                                    <img class="foto-expositores" src="img/imagen-expositor-1.jpg" alt="">
+                                </div>
+                                <div class="text-expositores">
+                                    <p><span class="nombre-expositor">Karla Mena Soto</span></p>
+                                    <p><span class="profesion-expositor">Cafetalero</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                                        orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                                    <div class="bandera-expositores">
+                                        <img src="img/bandera-costarica.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD 1 CIERRE -->
+                            <!-- CARD 2 INCIO -->
+                            <div class="card-expositores">
+                                <div class="img-expositores">
+                                    <img class="foto-expositores" src="img/imagen-expositor-2.jpg" alt="">
+                                </div>
+                                <div class="text-expositores">
+                                    <p><span class="nombre-expositor">Walter Osorio</span></p>
+                                    <p><span class="profesion-expositor">Dadada</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                                        orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                                    <div class="bandera-expositores">
+                                        <img src="img/bandera-colombia.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD 2 CIERRE -->
+                            <!-- CARD 3 INCIO -->
+                            <div class="card-expositores">
+                                <div class="img-expositores">
+                                    <img class="foto-expositores" src="img/imagen-expositor-3.jpg" alt="">
+                                </div>
+                                <div class="text-expositores">
+                                    <p><span class="nombre-expositor">Gabriela Carmona Araya</span></p>
+                                    <p><span class="profesion-expositor">Agricultor</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                                        orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                                    <div class="bandera-expositores">
+                                        <img src="img/bandera-costarica.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD 3 CIERRE -->
+                            <!-- CARD 4 Inicio -->
+                            <div class="card-expositores">
+                                <div class="img-expositores">
+                                    <img class="foto-expositores" src="img/imagen-expositor-4.jpg" alt="">
+                                </div>
+                                <div class="text-expositores">
+                                    <p><span class="nombre-expositor">José Alonso Calvo Araya</span></p>
+                                    <p><span class="profesion-expositor">Subdirector de Ciencias Agrarias</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                                        orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                                    <div class="bandera-expositores">
+                                        <img src="img/bandera-costarica.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD 4 Cierre -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-expositores">
+                            <div class="card-expositores">
+                                <div class="img-expositores">
+                                    <img class="foto-expositores" src="img/imagen-expositor-5.jpg" alt="">
+                                </div>
+                                <div class="text-expositores">
+                                    <p><span class="nombre-expositor">Marco Vinicio Gutierrez</span></p>
+                                    <p><span class="profesion-expositor">Cafe</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                                        orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                                    <div class="bandera-expositores">
+                                        <img src="img/bandera-costarica.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD 1 CIERRE -->
+                            <!-- CARD 2 INCIO -->
+                            <div class="card-expositores">
+                                <div class="img-expositores">
+                                    <img class="foto-expositores" src="img/imagen-expositor-6.jpg" alt="">
+                                </div>
+                                <div class="text-expositores">
+                                    <p><span class="nombre-expositor">Oswaldo Paez-Aponte</span></p>
+                                    <p><span class="profesion-expositor">cafeta</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                                        orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                                    <div class="bandera-expositores">
+                                        <img src="img/bandera-costarica.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD 2 CIERRE -->
+                            <!-- CARD 3 INCIO -->
+                            <div class="card-expositores">
+                                <div class="img-expositores">
+                                    <img class="foto-expositores" src="img/imagen-expositor-7.jpg" alt="">
+                                </div>
+                                <div class="text-expositores">
+                                    <p><span class="nombre-expositor">Johaner Rosales Flores </span></p>
+                                    <p><span class="profesion-expositor">cafee</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                                        orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                                    <div class="bandera-expositores">
+                                        <img src="img/bandera-costarica.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD 3 CIERRE -->
+                            <div class="card-expositores">
+                                <div class="img-expositores">
+                                    <img class="foto-expositores" src="img/imagen-expositor-8.jpg" alt="">
+                                </div>
+                                <div class="text-expositores">
+                                    <p><span class="nombre-expositor">José Daniel Alvarado</span></p>
+                                    <p><span class="profesion-expositor">oooo</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                                        orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                                    <div class="bandera-expositores">
+                                        <img src="img/bandera-costarica.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container-expositores">
+                            <div class="card-expositores">
+                                <div class="img-expositores">
+                                    <img class="foto-expositores" src="img/imagen-expositor-9.jpg" alt="">
+                                </div>
+                                <div class="text-expositores">
+                                    <p><span class="nombre-expositor">gdfg</span></p>
+                                    <p><span class="profesion-expositor">tgrtr</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                                        orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                                    <div class="bandera-expositores">
+                                        <img src="img/bandera-costarica.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD 1 CIERRE -->
+                            <!-- CARD 2 INCIO -->
+                            <div class="card-expositores">
+                                <div class="img-expositores">
+                                    <img class="foto-expositores" src="img/imagen-expositor-10.jpg" alt="">
+                                </div>
+                                <div class="text-expositores">
+                                    <p><span class="nombre-expositor">margtrrtgg</span></p>
+                                    <p><span class="profesion-expositor">tt</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                                        orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                                    <div class="bandera-expositores">
+                                        <img src="img/bandera-costarica.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD 2 CIERRE -->
+                            <!-- CARD 3 INCIO -->
+                            <div class="card-expositores">
+                                <div class="img-expositores">
+                                    <img class="foto-expositores" src="img/imagen-expositor-11.jpg" alt="">
+                                </div>
+                                <div class="text-expositores">
+                                    <p><span class="nombre-expositor">twrt </span></p>
+                                    <p><span class="profesion-expositor">caftee</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                                        orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                                    <div class="bandera-expositores">
+                                        <img src="img/bandera-costarica.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD 3 CIERRE -->
+                            <div class="card-expositores">
+                                <div class="img-expositores">
+                                    <img class="foto-expositores" src="img/imagen-expositor-12.jpg" alt="">
+                                </div>
+                                <div class="text-expositores">
+                                    <p><span class="nombre-expositor">ertg</span></p>
+                                    <p><span class="profesion-expositor">get</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                                        orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                                    <div class="bandera-expositores">
+                                        <img src="img/bandera-costarica.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- FINAL DE LA SECCION DE EXPOSITORES PARA WEB Y TABLET -->
+        <!-- INICIO DE LA SECCION DE EXPOSITORES PARA MOVIL -->
+        <section class="EXPOSITORES-movil">
+                <div class="container-xxl contendor-expositores-titu">
+                    <div class="informacion-expositores">
+                        <h2 class="titulo-expositores">Expositores</h2>
+                        <p class="info-expositores">Reúne a expertos que compartirán conocimientos sobre avances
+                            tecnológicos, prácticas agronómicas, sostenibilidad y tendencias de mercado, aportando a la
+                            mejora de la producción y el posicionamiento del café costarricense.</p>
+                    </div>
+                </div>
+                <div id="Expositores-movil">
+                    <!-- =============================================================== -->
+                    <!-- EXPOSITOR 1 -->
+                    <!-- =============================================================== -->
+                    <div class="CARDSS">
+                        <div class="card-expositores-movil">
+                            <div class="info-expo-movil">
+                                <div class="img-expositores-movil">
+                                    <img class="imagen-expositores-movil" src="img/imagen-expositor-1.jpg" alt="laura">
+                                </div>
+                                <div class="texto-expositores-movil">
+                                    <p><span class="nombre-expositor-movil">ertg</span></p>
+                                    <p><span class="profesion-expositor-movil">get</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender </p>
+                                </div>
+                            </div>
+                            <a href="#expositor1">
+                                <div class="ver-mas" ><p>Ver más</p></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- =============================================================== -->
+                    <!-- EXPOSITOR 2 -->
+                    <!-- =============================================================== -->
+                    <div class="CARDSS">
+                        <div class="card-expositores-movil">
+                            <div class="info-expo-movil">
+                                <div class="img-expositores-movil">
+                                    <img class="imagen-expositores-movil" src="img/imagen-expositor-2.jpg" alt="laura">
+                                </div>
+                                <div class="texto-expositores-movil">
+                                    <p><span class="nombre-expositor-movil">Walter Osorio</span></p>
+                                    <p><span class="profesion-expositor-movil">get</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender </p>
+                                </div>
+                            </div>
+                            <a href="#expositor2">
+                                <div class="ver-mas" ><p>Ver más</p></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- =============================================================== -->
+                    <!-- EXPOSITOR 3 -->
+                    <!-- =============================================================== -->
+                    <div class="CARDSS">
+                        <div class="card-expositores-movil">
+                            <div class="info-expo-movil">
+                                <div class="img-expositores-movil">
+                                    <img class="imagen-expositores-movil" src="img/imagen-expositor-3.jpg" alt="laura">
+                                </div>
+                                <div class="texto-expositores-movil">
+                                    <p><span class="nombre-expositor-movil">ertg</span></p>
+                                    <p><span class="profesion-expositor-movil">get</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender </p>
+                                </div>
+                            </div>
+                            <a href="#expositor3">
+                                <div class="ver-mas" ><p>Ver más</p></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- =============================================================== -->
+                    <!-- EXPOSITOR 4 -->
+                    <!-- =============================================================== -->
+                    <div class="CARDSS">
+                        <div class="card-expositores-movil">
+                            <div class="info-expo-movil">
+                                <div class="img-expositores-movil">
+                                    <img class="imagen-expositores-movil" src="img/imagen-expositor-4.jpg" alt="laura">
+                                </div>
+                                <div class="texto-expositores-movil">
+                                    <p><span class="nombre-expositor-movil">ertg</span></p>
+                                    <p><span class="profesion-expositor-movil">get</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender </p>
+                                </div>
+                            </div>
+                            <a href="#expositor4">
+                                <div class="ver-mas" ><p>Ver más</p></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- =============================================================== -->
+                    <!-- EXPOSITOR 5 -->
+                    <!-- =============================================================== -->
+                    <div class="CARDSS">
+                        <div class="card-expositores-movil">
+                            <div class="info-expo-movil">
+                                <div class="img-expositores-movil">
+                                    <img class="imagen-expositores-movil" src="img/imagen-expositor-5.jpg" alt="laura">
+                                </div>
+                                <div class="texto-expositores-movil">
+                                    <p><span class="nombre-expositor-movil">ertg</span></p>
+                                    <p><span class="profesion-expositor-movil">get</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender </p>
+                                </div>
+                            </div>
+                            <a href="#expositor5">
+                                <div class="ver-mas" ><p>Ver más</p></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- =============================================================== -->
+                    <!-- EXPOSITOR 6 -->
+                    <!-- =============================================================== -->
+                    <div class="CARDSS">
+                        <div class="card-expositores-movil">
+                            <div class="info-expo-movil">
+                                <div class="img-expositores-movil">
+                                    <img class="imagen-expositores-movil" src="img/imagen-expositor-6.jpg" alt="laura">
+                                </div>
+                                <div class="texto-expositores-movil">
+                                    <p><span class="nombre-expositor-movil">ertg</span></p>
+                                    <p><span class="profesion-expositor-movil">get</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender </p>
+                                </div>
+                            </div>
+                            <a href="#expositor6">
+                                <div class="ver-mas" ><p>Ver más</p></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- =============================================================== -->
+                    <!-- EXPOSITOR 7 -->
+                    <!-- =============================================================== -->
+                    <div class="CARDSS">
+                        <div class="card-expositores-movil">
+                            <div class="info-expo-movil">
+                                <div class="img-expositores-movil">
+                                    <img class="imagen-expositores-movil" src="img/imagen-expositor-7.jpg" alt="laura">
+                                </div>
+                                <div class="texto-expositores-movil">
+                                    <p><span class="nombre-expositor-movil">ertg</span></p>
+                                    <p><span class="profesion-expositor-movil">get</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender </p>
+                                </div>
+                            </div>
+                            <a href="#expositor7">
+                                <div class="ver-mas" ><p>Ver más</p></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- =============================================================== -->
+                    <!-- EXPOSITOR 8 -->
+                    <!-- =============================================================== -->
+                    <div class="CARDSS">
+                        <div class="card-expositores-movil">
+                            <div class="info-expo-movil">
+                                <div class="img-expositores-movil">
+                                    <img class="imagen-expositores-movil" src="img/imagen-expositor-8.jpg" alt="laura">
+                                </div>
+                                <div class="texto-expositores-movil">
+                                    <p><span class="nombre-expositor-movil">ertg</span></p>
+                                    <p><span class="profesion-expositor-movil">get</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender </p>
+                                </div>
+                            </div>
+                            <a href="#expositor8">
+                                <div class="ver-mas" ><p>Ver más</p></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- =============================================================== -->
+                    <!-- EXPOSITOR 9 -->
+                    <!-- =============================================================== -->
+                    <div class="CARDSS">
+                        <div class="card-expositores-movil">
+                            <div class="info-expo-movil">
+                                <div class="img-expositores-movil">
+                                    <img class="imagen-expositores-movil" src="img/imagen-expositor-9.jpg" alt="laura">
+                                </div>
+                                <div class="texto-expositores-movil">
+                                    <p><span class="nombre-expositor-movil">ertg</span></p>
+                                    <p><span class="profesion-expositor-movil">get</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender </p>
+                                </div>
+                            </div>
+                            <a href="#expositor9">
+                                <div class="ver-mas" ><p>Ver más</p></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- =============================================================== -->
+                    <!-- EXPOSITOR 10 -->
+                    <!-- =============================================================== -->
+                    <div class="CARDSS">
+                        <div class="card-expositores-movil">
+                            <div class="info-expo-movil">
+                                <div class="img-expositores-movil">
+                                    <img class="imagen-expositores-movil" src="img/imagen-expositor-10.jpg" alt="laura">
+                                </div>
+                                <div class="texto-expositores-movil">
+                                    <p><span class="nombre-expositor-movil">ertg</span></p>
+                                    <p><span class="profesion-expositor-movil">get</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender </p>
+                                </div>
+                            </div>
+                            <a href="#expositor10">
+                                <div class="ver-mas" ><p>Ver más</p></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- =============================================================== -->
+                    <!-- EXPOSITOR 11 -->
+                    <!-- =============================================================== -->
+                    <div class="CARDSS">
+                        <div class="card-expositores-movil">
+                            <div class="info-expo-movil">
+                                <div class="img-expositores-movil">
+                                    <img class="imagen-expositores-movil" src="img/imagen-expositor-11.jpg" alt="laura">
+                                </div>
+                                <div class="texto-expositores-movil">
+                                    <p><span class="nombre-expositor-movil">ertg</span></p>
+                                    <p><span class="profesion-expositor-movil">get</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender </p>
+                                </div>
+                            </div>
+                            <a href="#expositor11">
+                                <div class="ver-mas" ><p>Ver más</p></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- =============================================================== -->
+                    <!-- EXPOSITOR 12 -->
+                    <!-- =============================================================== -->
+                    <div class="CARDSS">
+                        <div class="card-expositores-movil">
+                            <div class="info-expo-movil">
+                                <div class="img-expositores-movil">
+                                    <img class="imagen-expositores-movil" src="img/imagen-expositor-12.jpg" alt="laura">
+                                </div>
+                                <div class="texto-expositores-movil">
+                                    <p><span class="nombre-expositor-movil">ertg</span></p>
+                                    <p><span class="profesion-expositor-movil">get</span></p>
+                                    <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                                        entender </p>
+                                </div>
+                            </div>
+                            <a href="#expositor12">
+                                <div class="ver-mas" ><p>Ver más</p></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- EXPOSITOR 1 -->
+            <!-- =============================================================== -->
+            <article class="light-box" id="expositor1">
+                <div class="card-expositores">
+                    <div class="img-expositores">
+                        <img class="foto-expositores" src="img/imagen-expositor-1.jpg" alt="">
+                    </div>
+                    <div class="text-expositores">
+                        <p><span class="nombre-expositor">twrt </span></p>
+                        <p><span class="profesion-expositor">caftee</span></p>
+                        <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                            entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                        <div class="bandera-expositores">
+                            <img src="img/bandera-costarica.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="#anclaExpositores-movil" class="cierre"><i class='bx bx-x bx-md'></i></a>
+            </article>
+            <!-- =============================================================== -->
+            <!-- EXPOSITOR 2 -->
+            <!-- =============================================================== -->
+            <article class="light-box" id="expositor2">
+                <div class="card-expositores">
+                    <div class="img-expositores">
+                        <img class="foto-expositores" src="img/imagen-expositor-2.jpg" alt="">
+                    </div>
+                    <div class="text-expositores">
+                        <p><span class="nombre-expositor">Walter osorio </span></p>
+                        <p><span class="profesion-expositor">caftee</span></p>
+                        <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                            entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                        <div class="bandera-expositores">
+                            <img src="img/bandera-colombia.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="#anclaExpositores-movil" class="cierre"><i class='bx bx-x bx-md'></i></a>
+            </article>
+            <!-- =============================================================== -->
+            <!-- EXPOSTOR 3 -->
+            <!-- =============================================================== -->
+            <article class="light-box" id="expositor3">
+                <div class="card-expositores">
+                    <div class="img-expositores">
+                        <img class="foto-expositores" src="img/imagen-expositor-3.jpg" alt="">
+                    </div>
+                    <div class="text-expositores">
+                        <p><span class="nombre-expositor">twrt </span></p>
+                        <p><span class="profesion-expositor">caftee</span></p>
+                        <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                            entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                        <div class="bandera-expositores">
+                            <img src="img/bandera-costarica.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="#anclaExpositores-movil" class="cierre"><i class='bx bx-x bx-md'></i></a>
+            </article>
+            <!-- =============================================================== -->
+            <!-- EXPOSITOR 4 -->
+            <!-- =============================================================== -->
+            <article class="light-box" id="expositor4">
+                <div class="card-expositores">
+                    <div class="img-expositores">
+                        <img class="foto-expositores" src="img/imagen-expositor-4.jpg" alt="">
+                    </div>
+                    <div class="text-expositores">
+                        <p><span class="nombre-expositor">twrt </span></p>
+                        <p><span class="profesion-expositor">caftee</span></p>
+                        <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                            entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                        <div class="bandera-expositores">
+                            <img src="img/bandera-costarica.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="#anclaExpositores-movil" class="cierre"><i class='bx bx-x bx-md'></i></a>
+            </article>
+            <!-- =============================================================== -->
+            <!-- EXPOSITOR 5 -->
+            <!-- =============================================================== -->
+            <article class="light-box" id="expositor5">
+                <div class="card-expositores">
+                    <div class="img-expositores">
+                        <img class="foto-expositores" src="img/imagen-expositor-5.jpg" alt="">
+                    </div>
+                    <div class="text-expositores">
+                        <p><span class="nombre-expositor">twrt </span></p>
+                        <p><span class="profesion-expositor">caftee</span></p>
+                        <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                            entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                        <div class="bandera-expositores">
+                            <img src="img/bandera-costarica.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="#anclaExpositores-movil" class="cierre"><i class='bx bx-x bx-md'></i></a>
+            </article>
+            <!-- =============================================================== -->
+            <!-- EXPOSITOR 6 -->
+            <!-- =============================================================== -->
+            <article class="light-box" id="expositor6">
+                <div class="card-expositores">
+                    <div class="img-expositores">
+                        <img class="foto-expositores" src="img/imagen-expositor-6.jpg" alt="">
+                    </div>
+                    <div class="text-expositores">
+                        <p><span class="nombre-expositor">twrt </span></p>
+                        <p><span class="profesion-expositor">caftee</span></p>
+                        <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                            entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                        <div class="bandera-expositores">
+                            <img src="img/bandera-costarica.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="#anclaExpositores-movil" class="cierre"><i class='bx bx-x bx-md'></i></a>
+            </article>
+            <!-- =============================================================== -->
+            <!-- EXPOSITOR 7 -->
+            <!-- =============================================================== -->
+            <article class="light-box" id="expositor7">
+                <div class="card-expositores">
+                    <div class="img-expositores">
+                        <img class="foto-expositores" src="img/imagen-expositor-7.jpg" alt="">
+                    </div>
+                    <div class="text-expositores">
+                        <p><span class="nombre-expositor">twrt </span></p>
+                        <p><span class="profesion-expositor">caftee</span></p>
+                        <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                            entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                        <div class="bandera-expositores">
+                            <img src="img/bandera-costarica.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="#anclaExpositores-movil" class="cierre"><i class='bx bx-x bx-md'></i></a>
+            </article>
+            <!-- =============================================================== -->
+            <!-- EXPOSITOR 8 -->
+            <!-- =============================================================== -->
+            <article class="light-box" id="expositor8">
+                <div class="card-expositores">
+                    <div class="img-expositores">
+                        <img class="foto-expositores" src="img/imagen-expositor-8.jpg" alt="">
+                    </div>
+                    <div class="text-expositores">
+                        <p><span class="nombre-expositor">twrt </span></p>
+                        <p><span class="profesion-expositor">caftee</span></p>
+                        <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                            entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                        <div class="bandera-expositores">
+                            <img src="img/bandera-costarica.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="#anclaExpositores-movil" class="cierre"><i class='bx bx-x bx-md'></i></a>
+            </article>
+            <!-- =============================================================== -->
+            <!-- EXPOSITOR 9 -->
+            <!-- =============================================================== -->
+            <article class="light-box" id="expositor9">
+                <div class="card-expositores">
+                    <div class="img-expositores">
+                        <img class="foto-expositores" src="img/imagen-expositor-9.jpg" alt="">
+                    </div>
+                    <div class="text-expositores">
+                        <p><span class="nombre-expositor">twrt </span></p>
+                        <p><span class="profesion-expositor">caftee</span></p>
+                        <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                            entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                        <div class="bandera-expositores">
+                            <img src="img/bandera-costarica.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="#anclaExpositores-movil" class="cierre"><i class='bx bx-x bx-md'></i></a>
+            </article>
+            <!-- =============================================================== -->
+            <!-- EXPOSITOR 10 -->
+            <!-- =============================================================== -->
+            <article class="light-box" id="expositor10">
+                <div class="card-expositores">
+                    <div class="img-expositores">
+                        <img class="foto-expositores" src="img/imagen-expositor-10.jpg" alt="">
+                    </div>
+                    <div class="text-expositores">
+                        <p><span class="nombre-expositor">twrt </span></p>
+                        <p><span class="profesion-expositor">caftee</span></p>
+                        <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                            entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                        <div class="bandera-expositores">
+                            <img src="img/bandera-costarica.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="#anclaExpositores-movil" class="cierre"><i class='bx bx-x bx-md'></i></a>
+            </article>
+            <!-- =============================================================== -->
+            <!-- EXPOSITOR 11 -->
+            <!-- =============================================================== -->
+            <article class="light-box" id="expositor11">
+                <div class="card-expositores">
+                    <div class="img-expositores">
+                        <img class="foto-expositores" src="img/imagen-expositor-11.jpg" alt="">
+                    </div>
+                    <div class="text-expositores">
+                        <p><span class="nombre-expositor">twrt </span></p>
+                        <p><span class="profesion-expositor">caftee</span></p>
+                        <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                            entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                        <div class="bandera-expositores">
+                            <img src="img/bandera-costarica.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="#anclaExpositores-movil" class="cierre"><i class='bx bx-x bx-md'></i></a>
+            </article>
+            <!-- =============================================================== -->
+            <!-- EXPOSITOR 12 -->
+            <!-- =============================================================== -->
+            <article class="light-box" id="expositor12">
+                <div class="card-expositores">
+                    <div class="img-expositores">
+                        <img class="foto-expositores" src="img/imagen-expositor-12.jpg" alt="">
+                    </div>
+                    <div class="text-expositores">
+                        <p><span class="nombre-expositor">twrt </span></p>
+                        <p><span class="profesion-expositor">caftee</span></p>
+                        <p>Soy un apasionado del café. No solo disfruto de su sabor, sino que me encanta
+                            entender cada detalle que lo hace especial. Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza Me gusta explorar los diferentes
+                            orígenes de los granos, reconocer las notas sutiles en cada taza</p>
+                        <div class="bandera-expositores">
+                            <img src="img/bandera-costarica.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="#anclaExpositores-movil" class="cierre"><i class='bx bx-x bx-md'></i></a>
+            </article>
+            <!-- ============================================================================ -->
+        </section>
+        <!-- FINAL SECCION EXPOSITORES MOVIL -->
+        <!-- INICIO SECCION ALCANCE -->
+        <section class=" d-flex flex-column gap-4 container-fluid alcance-section text-center alcance-section py-5">
+            <!-- FILA DEL H2 -->
+            <div class="row">
+                <div class="col">
+                    <h2>
+                        NUESTRO ALCANCE
+                    </h2>
+                </div>
+            </div>
+            <!-- FILA DEL PARRAFO -->
+            <div class="row">
+                <div class="col">
+                    <p>
+                        "Agradecemos su compromiso en impulsar el crecimiento de esta importante industria.  Juntos, fortalecemos el desarrollo y la excelencia en el sector cafetalero"
+                    </p>
+                </div>
+            </div>
+            <!-- FILA DE LOS GRAFICOS -->
+            <article  class="row svg-alcance">
+                <!-- PRIMERA METRICA -->
+                <div class="col">
+                    <div class="svg-container d-flex justify-content-center">
+                        <svg width="350" height="350"> 
+                            <circle class="cfondo" r="120" cx="50%" cy="50%" pathlegth="100" style="filter:drop-shadow(0px 0px 10px rgba(0,0,0,0.2));"></circle>
+                            <circle class="cback" r="80" cx="50%" cy="50%" pathlength="100"></circle>
+                            <circle class="cfront" r="80" cx="50%" cy="50%" pathlength="100"></circle>
+                            <text id="porcentaje" x="50%" y="50%" text-anchor="middle" font-size="35px" fill="#6C9C4A" font-family="Supreme" font-weight="700" >0%</text>
+                            <text x="50%" y="67%" text-anchor="middle" font-size="25px" font-weight="600" font-family="Supreme"  >TÉCNICOS</text>
+                        </svg>
+                    </div>  
+                </div>
+                <!-- SEGUNDA METRICA -->
+                <div class="col">
+                    <div class="svg-container d-flex justify-content-center">
+                        <svg width="350" height="350"> 
+                            <circle class="cfondo" r="120" cx="50%" cy="50%" pathlegth="100" style="filter:drop-shadow(0px 0px 10px rgba(0,0,0,0.2));"></circle>
+                            <circle class="cback2" r="80" cx="50%" cy="50%" pathlength="100"></circle>
+                            <circle class="cfront2" r="80" cx="50%" cy="50%" pathlength="100"></circle>
+                            <text id="porcentaje2" x="50%" y="50%" text-anchor="middle" font-size="35px" fill="#6C9C4A" font-family="Supreme" font-weight="700" >0%</text>
+                            <text x="50%" y="67%" text-anchor="middle" font-size="25px" font-weight="600" font-family="Supreme">Productores</text>
+                        </svg>
+                    </div>  
+                </div>
+                <!-- TERCERA METRICA -->
+                <div class="col">
+                    <div class="svg-container d-flex justify-content-center">
+                        <svg width="350" height="350"> 
+                            <circle class="cfondo" r="120" cx="50%" cy="50%" pathlegth="100" style="filter:drop-shadow(0px 0px 10px rgba(0,0,0,0.2));"></circle>
+                            <circle class="cback3" r="80" cx="50%" cy="50%" pathlength="100"></circle>
+                            <circle class="cfront3" r="80" cx="50%" cy="50%" pathlength="100"></circle>
+                            <text id="porcentaje3" x="50%" y="50%" text-anchor="middle" font-size="35px" fill="#6C9C4A" font-family="Supreme" font-weight="700" >0%</text>
+                            <text x="50%" y="67%" text-anchor="middle" font-size="25px" font-weight="600" font-family="Supreme" >Invitados</text>
+                        </svg>
+                    </div>  
+                </div>
+            </article>
+            <!-- FILA DE LOS PARTICIPANTES -->
+            <div class="row">
+                <div class="col">
+                    <a href="#" class="participantes rounded">300 PARTICIPANTES</a>
+                </div>
+            </div>
+        </section>
+        <!-- CIERRE SECCION ALCANCE -->
+        <!-- INICIO SECCION GALERIA  GALERIA  -->
+
+        <!-- CIERRE SECCION GALERIA  -->
+        
+        <!-- INICIO SECCION COMENTARIOS -->
+        <section class="comentarios">
+            <h2 class="titulo-comentario">Comentarios</h2>
+            <div class="container-comentarios">
+                <!-- ==================================
+                COMENTARIO 1
+                ================================== -->
+                <div class="card-comentario">
+                    <div class="imagen-comentario">
+                        <img class="img-comentarios" src="img/comentarios-1.jpg" alt="Persona comentario 1">
+                    </div>
+                    <div class="texto-comentario">
+                        <span class="nombre-comentario"><p>Lorem, ipsum dolor.</p></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, asperiores. Excepturi consequatur eaque labore. Pariatur maxime consectetur obcaecati aspernatur minimasit amet .</p>
+                    </div>
+                </div>
+                <!-- ==================================
+                COMENTARIO 2
+                ================================== -->
+                <div class="card-comentario">
+                    <div class="imagen-comentario">
+                        <img class="img-comentarios" src="img/comentarios-2.jpg" alt="Persona comentario 1">
+                    </div>
+                    <div class="texto-comentario">
+                        <span class="nombre-comentario"><p>Lorem, ipsum dolor.</p></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, asperiores. Excepturi consequatur eaque labore. Pariatur maxime consectetur obcaecati aspernatur minimasit amet .</p>
+                    </div>
+                </div>
+                <!-- ==================================
+                COMENTARIO 3
+                ================================== -->
+                <div class="card-comentario">
+                    <div class="imagen-comentario">
+                        <img class="img-comentarios" src="img/comentarios-3.jpg" alt="Persona comentario 1">
+                    </div>
+                    <div class="texto-comentario">
+                        <span class="nombre-comentario"><p>Lorem, ipsum dolor.</p></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, asperiores. Excepturi consequatur eaque labore. Pariatur maxime consectetur obcaecati aspernatur minimasit amet .</p>
+                    </div>
+                </div>
+                <!-- ==================================
+                COMENTARIO 4
+                ================================== -->
+                <div class="card-comentario">
+                    <div class="imagen-comentario">
+                        <img class="img-comentarios" src="img/comentarios-1.jpg" alt="Persona comentario 4">
+                    </div>
+                    <div class="texto-comentario">
+                        <span class="nombre-comentario"><p>Lorem, ipsum dolor.</p></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, asperiores. Excepturi consequatur eaque labore. Pariatur maxime consectetur obcaecati aspernatur minimasit amet .</p>
+                    </div>
+                </div>
+                <!-- ==================================
+                COMENTARIO 5
+                ================================== -->
+                <div class="card-comentario">
+                    <div class="imagen-comentario">
+                        <img class="img-comentarios" src="img/comentarios-5.jpg" alt="Persona comentario 1">
+                    </div>
+                    <div class="texto-comentario">
+                        <span class="nombre-comentario"><p>Lorem, ipsum dolor.</p></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, asperiores. Excepturi consequatur eaque labore. Pariatur maxime consectetur obcaecati aspernatur minimasit amet .</p>
+                    </div>
+                </div>
+                <!-- ==================================
+                COMENTARIO 6
+                ================================== -->
+                <div class="card-comentario">
+                    <div class="imagen-comentario">
+                        <img class="img-comentarios" src="img/comentarios-6.jpg" alt="Persona comentario 1">
+                    </div>
+                    <div class="texto-comentario">
+                        <span class="nombre-comentario"><p>Lorem, ipsum dolor.</p></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, asperiores. Excepturi consequatur eaque labore. Pariatur maxime consectetur obcaecati aspernatur minimasit amet .</p>
+                    </div>
+                </div>
+                <!-- ==================================
+                COMENTARIO 7
+                ================================== -->
+                <div class="card-comentario">
+                    <div class="imagen-comentario">
+                        <img class="img-comentarios" src="img/comentarios-7.jpg" alt="Persona comentario 1">
+                    </div>
+                    <div class="texto-comentario">
+                        <span class="nombre-comentario"><p>Lorem, ipsum dolor.</p></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, asperiores. Excepturi consequatur eaque labore. Pariatur maxime consectetur obcaecati aspernatur minimasit amet .</p>
+                    </div>
+                </div>
+                <!-- ==================================
+                COMENTARIO 8
+                ================================== -->
+                <div class="card-comentario">
+                    <div class="imagen-comentario">
+                        <img class="img-comentarios" src="img/comentarios-8.jpg" alt="Persona comentario 1">
+                    </div>
+                    <div class="texto-comentario">
+                        <span class="nombre-comentario"><p>Lorem, ipsum dolor.</p></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, asperiores. Excepturi consequatur eaque labore. Pariatur maxime consectetur obcaecati aspernatur minimasit amet .</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <!-- FIN MAIN -->
+    <!-- COMIENZO FOOTER -->
+    <footer>
+
+    </footer>
+    <!-- FIN FOOTER -->
+    <!-- SCRIPT DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- SCRIPT DE JAVASCRIPT -->
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
