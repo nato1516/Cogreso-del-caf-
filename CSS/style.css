@@ -365,6 +365,71 @@ header {
 
 /*===================== FIN Estilos del contenido Banner ====================*/
 
+
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+TEMATICAS
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+
+
+.icon-h4{
+    color:var(--Tipografia-Clara);
+    font-family: var(--Fuente-H2);
+    font-size: 28px;
+}
+
+/* .icon-section p{
+     color:var(--Tipografia-Clara); 
+    font-family: var(--Fuente-Parrafos);
+    font-weight: var(--Font-Regular);
+    font-size: 16px;
+} */
+
+.icon-section {
+    background: #271B16;
+    height: auto;
+    padding: 80px 0px !important;
+}
+
+.cultivo {
+    width: 170px;
+}
+
+.icon-section {
+    background-color: #3b2c2c;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.icon-box {
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    width: 270px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.icon-box img {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 10px;
+}
+
+.icon-text {
+    font-size: 0.9em;
+    font-weight: bold;
+    color:var(--Tipografia-Clara); 
+    font-family: var(--Fuente-Parrafos);
+    font-weight: var(--Font-Regular);
+    font-size: 16px;
+}
+
+
 /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 AGENDA
 /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
@@ -567,7 +632,7 @@ CARACTERISTICAS DE LA SECCION DE EXPOSITORES */
     background-repeat: repeat-x;
     background-size: cover;
     background-position: center;
-    width: 350px;
+    width: 450px;
     height: 450px;
     position: relative;
     border-top-left-radius: 30px;
@@ -610,7 +675,7 @@ CARACTERISTICAS DE LA SECCION DE EXPOSITORES */
 }
 
 .text-expositores {
-    width: 219px;
+    width: 350px;
     height: 216px;
     margin: -120px auto 0px;
 
@@ -975,16 +1040,33 @@ footer a{
     }
 
 }
-/* ================= MEDIA QUERY ================ */
+@media (max-width: 1400px) {
+    .icon-text {
+        font-size: 0.9em;
+        font-weight: bold;
+        width: 250px;
+    }
+
+    .cultivo {
+        width: 170px;
+    }
+}
 @media (max-width: 1410px) {
     .comentario9{
         display: none;
     }
 }
+@media (max-width: 1200px) {
+    .icon-text {
+        font-size: 12px;
+        font-weight: bold;
+        width: 200px;
+    }
 
-
-
-/*========================================= MEDIAQUERY TAMANO TABLET/ 1024PX - 768PX =========================================*/
+    .cultivo {
+        width: 170px;
+    }
+}
 @media screen and (max-width: 1024px) {
     .nav_menu {
         padding: 0 !important;
@@ -1208,8 +1290,125 @@ footer a{
         background: url(../img/Footer\ bg\ tablet.jpg);
     }
 }
+@media (max-width: 992px) {
+    .icon-text {
+        font-size: 11px;
+        width: 170px;
+    }
+    .EXPOSITORES {
+        display: none;
+    }
 
-/* ========================================= MEDIAQUERY TAMANO TABLET/ 768PX - 0PX ========================================= */
+    .EXPOSITORES-movil {
+        display: block;
+        background-color: var(--Color-Fondo-Oscuro);
+    }
+    .EXPOSITORES-movil {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .CARDSS {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+    .card-expositores-movil {
+        background: url(../img/Fondo-expositores.png);
+        background-repeat: repeat-x;
+        background-size: cover;
+        background-position: center;
+        width: 90%;
+        height: auto;
+        position: relative;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .card-expositores{
+        height: 520PX;
+    }
+    .img-expositores {
+        top: -250px;
+    }
+    .text-expositores{
+        margin-top: -220PX;
+    }
+}
+@media (max-width: 950px) {
+    .container-comentarios {
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .agenda__container {
+        justify-content: center;
+    }
+    .Nov12,
+    .Nov13,
+    .Nov14,
+    .generalidades {
+        margin: initial;
+    }
+    .granos__cafes{
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .info-expositores {
+        font-size: 18px;
+    }
+    .card-expositores {
+        width: 400px;
+        height: 520px;
+        margin: 65px 0px 0;
+    }
+    .img-expositores {
+        top: -180px;
+    }
+    .foto-expositores {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        margin-top: -100px;
+    }
+    .text-expositores p {
+        margin: 10px;
+    }
+    .bandera-expositores {
+        margin-top: 20px;
+    }
+    .text-expositores {
+        margin-top: -170px;
+    }
+    .container-comentarios {
+        width: 98%;
+    }
+    .texto-comentario{
+        padding-bottom: 10px;
+    }
+    .CARDSS{
+        margin: 0 auto;
+    }
+    .bandera-expositoress{
+        display: flex;
+        justify-content: start;
+        margin: 10px 0px;
+    }
+}
+@media (max-width: 770px) {
+    .icon-text {
+        font-size: 12px;
+    }
+    .icon-box img {
+        width: 70px;
+        height: 100px;
+        margin-bottom: 8px;
+    }
+}
 @media screen and (max-width: 768px) {
 
     .nav_menu {
@@ -1437,112 +1636,6 @@ footer a{
         margin-bottom: 0px !important;
     }
 }
-
-
-/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
-@media (max-width: 950px) {
-    .container-comentarios {
-        justify-content: space-evenly;
-    }
-    .EXPOSITORES {
-        display: none;
-    }
-
-    .EXPOSITORES-movil {
-        display: block;
-        background-color: var(--Color-Fondo-Oscuro);
-    }
-    .EXPOSITORES-movil {
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .CARDSS {
-        width: 60%;
-        display: flex;
-        justify-content: center;
-    }
-    .card-expositores-movil {
-        background: url(../img/Fondo-expositores.png);
-        background-repeat: repeat-x;
-        background-size: cover;
-        background-position: center;
-        width: 90%;
-        height: auto;
-        position: relative;
-        border-top-left-radius: 30px;
-        border-bottom-right-radius: 30px;
-    }
-    .card-expositores{
-        height: 520PX;
-    }
-    .img-expositores {
-        top: -250px;
-    }
-    .text-expositores{
-        margin-top: -220PX;
-    }
-}
-
-@media (max-width: 900px) {
-    .agenda__container {
-        justify-content: center;
-    }
-    .Nov12,
-    .Nov13,
-    .Nov14,
-    .generalidades {
-        margin: initial;
-    }
-    .granos__cafes{
-        display: none;
-    }
-}
-
-@media (max-width: 800px) {
-    .info-expositores {
-        font-size: 18px;
-    }
-    .card-expositores {
-        width: 400px;
-        height: 520px;
-        margin: 65px 0px 0;
-    }
-    .img-expositores {
-        top: -180px;
-    }
-    .foto-expositores {
-        width: 170px;
-        height: 170px;
-        border-radius: 50%;
-        margin-top: -100px;
-    }
-    .text-expositores p {
-        margin: 10px;
-    }
-    .bandera-expositores {
-        margin-top: 20px;
-    }
-    .text-expositores {
-        margin-top: -170px;
-    }
-    .container-comentarios {
-        width: 98%;
-    }
-    .texto-comentario{
-        padding-bottom: 10px;
-    }
-    .CARDSS{
-        margin: 0 auto;
-    }
-    .bandera-expositoress{
-        display: flex;
-        justify-content: start;
-        margin: 10px 0px;
-    }
-}
 @media (max-width: 600px) {
     .h2-agenda{
         font-size: 30px ;
@@ -1623,8 +1716,21 @@ footer a{
         margin-top: -170px;
     }
 }
+@media (max-width: 500px) {
+    .icon-text {
+        font-size: 12px;
+    }
+}
+@media (max-width: 400px) {
+    .icon-text {
+        font-size: 9px;
+        width: 80px;
+    }
 
-
+    .icon-box img {
+        width: 60px;
+    }
+}
 @media (max-width: 390px) {
     .h2-agenda{
         font-size: 30px ;
@@ -1719,8 +1825,6 @@ footer a{
         padding: 10px 10px;
     }
 }
-
-
 @media (max-width: 320px) {
     /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\
     AGENDA
