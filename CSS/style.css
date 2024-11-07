@@ -864,6 +864,7 @@ METRICAS
 
 .texto-comentario {
     margin-top: 20px;
+    padding-bottom: 10px;
 }
 
 .nombre-comentario {
@@ -972,8 +973,14 @@ footer a{
     .cafesitos3 {
         width: 50px;
     }
-}
 
+}
+/* ================= MEDIA QUERY ================ */
+@media (max-width: 1410px) {
+    .comentario9{
+        display: none;
+    }
+}
 
 
 
@@ -1446,6 +1453,17 @@ footer a{
         display: block;
         background-color: var(--Color-Fondo-Oscuro);
     }
+    .EXPOSITORES-movil {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .CARDSS {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
     .card-expositores-movil {
         background: url(../img/Fondo-expositores.png);
         background-repeat: repeat-x;
@@ -1472,7 +1490,6 @@ footer a{
     .agenda__container {
         justify-content: center;
     }
-
     .Nov12,
     .Nov13,
     .Nov14,
@@ -1514,13 +1531,17 @@ footer a{
     .container-comentarios {
         width: 98%;
     }
-    /* .texto-comentario{
+    .texto-comentario{
         padding-bottom: 10px;
-    } */
-}
-
-.EXPOSITORES-movil {
-    width: 100%;
+    }
+    .CARDSS{
+        margin: 0 auto;
+    }
+    .bandera-expositoress{
+        display: flex;
+        justify-content: start;
+        margin: 10px 0px;
+    }
 }
 @media (max-width: 600px) {
     .h2-agenda{
@@ -1561,13 +1582,6 @@ footer a{
         border-top-left-radius: 30px;
         border-bottom-right-radius: 30px;
     }
-
-    .EXPOSITORES-movil {
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-    }
-
     .CARDSS {
         width: 90%;
         display: flex;
@@ -1665,7 +1679,11 @@ footer a{
         margin: 10px;
         font-size: 13px;
     }
-
+    .bandera-expositoress{
+        display: flex;
+        justify-content: center;
+        margin: 10px 0px;
+    }
     .light-box {
         background-color: rgba(0, 0, 0, 0.807);
     }
