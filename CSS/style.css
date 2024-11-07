@@ -825,6 +825,7 @@ METRICAS
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 25px 0px;
 }
 
 .titulo-comentario {
@@ -1626,7 +1627,7 @@ footer a{
     }
 
     .card-expositores {
-        width: 230px;
+        width: 280px;
         height: 500px;
         margin: 0;
     }
@@ -1663,7 +1664,7 @@ footer a{
     .card-comentario {
         background-color: var(--Color-Fondo-Claro);
         width: 343px;
-        height: 290px;
+        height: 200px;
         display: flex;
         border-radius: 20px;
         margin: 15px 5px 0px;
