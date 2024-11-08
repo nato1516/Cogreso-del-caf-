@@ -2216,6 +2216,9 @@ footer a {
     .copyright {
         margin-top: 13rem;
     }
+    .informacion-expositores{
+        width: 90%;
+    }
 }
 
 @media (max-width: 320px) {
@@ -2241,7 +2244,7 @@ footer a {
         height: 120px;
         margin-top: -80px;
     }
-
+    
     .cierre {
         right: 10px;
         top: 8px;
