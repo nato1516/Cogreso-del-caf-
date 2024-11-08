@@ -2121,7 +2121,9 @@ footer a {
     .h2-agenda {
         font-size: 30px;
     }
-
+    .icon-h4{
+        font-size: 30px;
+    }
     .info-expo-movil {
         flex-direction: column;
         justify-content: center;
@@ -2227,6 +2229,12 @@ footer a {
     }
     .text-expositores{
         width: 90%;
+    }
+    .section-title{
+        font-size: 20px;
+    }
+    .icon-h4{
+        font-size: 20px;
     }
 }
 
