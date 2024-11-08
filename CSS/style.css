@@ -1351,7 +1351,9 @@ footer a {
     .nav_menu{
         padding: 13px 0 !important;
     }
-    
+    h2{
+        font-size: 30px;
+    }
 /*===================== Estilos de los granos ==================*/
 
 /*== GRANOS PARA MOVIL Y TABLET ==*/
