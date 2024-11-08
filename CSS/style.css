@@ -358,7 +358,7 @@ TEMATICAS
 .icon-h4 {
     color: var(--Tipografia-Clara);
     font-family: var(--Fuente-H2);
-    font-size: 28px;
+    font-size: 48px;
 }
 
 /* .icon-section p{
@@ -595,7 +595,7 @@ EXPOSITORES
 
 .titulo-expositores {
     font-family: var(--Fuente-H2);
-    font-size: 48;
+    font-size: 48px;
     color: var(--Tipografia-Clara);
     font-weight: var(--Font-Bold);
     padding-top: 40px;
@@ -847,7 +847,7 @@ METRICAS
 }
 
 .alcance-section h2 {
-    font-size: 35px;
+    font-size: 48px;
     font-family: var(--Fuente-H2);
     font-weight: 700;
 }
@@ -943,6 +943,8 @@ VIDEOS
 .section-content h2 {
     color: var(--Color-Fondo-Claro);
     font-weight: bold;
+    font-size: 48px;
+    font-family: var(--Fuente-H2);
 }
 
 .content-box {
