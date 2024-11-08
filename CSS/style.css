@@ -1027,7 +1027,7 @@ STANDS
 .section-title{
     padding-top: 20px;
     text-align: center;
-    font-family: "Ranade";
+    font-family: var(--Fuente-H2);
     font-size: 48px;
 }
 .card_standBody{
