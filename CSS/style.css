@@ -2364,19 +2364,8 @@ footer a {
     .copyright {
         margin-top: 13rem;
     }
-    .titulo-expositores{
-        font-size: 20px;
-    }
     .text-expositores {
         width: 90%;
-    }
-
-    .section-title {
-        font-size: 20px;
-    }
-
-    .icon-h4 {
-        font-size: 20px;
     }
 }
 
@@ -2392,7 +2381,9 @@ footer a {
     .section-title {
         font-size: 20px;
     }
-
+    .titulo-expositores{
+        font-size: 20px;
+    }
     .card-expositores {
         width: 230px;
         height: 385px;
