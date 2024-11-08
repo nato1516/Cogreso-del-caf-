@@ -1351,7 +1351,10 @@ footer a {
     .nav_menu{
         padding: 13px 0 !important;
     }
-    h2{
+    .section-title{
+        font-size: 30px;
+    }
+    .section-content h2{
         font-size: 30px;
     }
 /*===================== Estilos de los granos ==================*/
@@ -1546,7 +1549,9 @@ footer a {
     .Redes-Sociales svg {
         height: 23px;
     }
-
+    .titulo-comentario{
+        font-size: 30px;
+    }
     /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
     footer
     /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
