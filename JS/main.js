@@ -1,3 +1,37 @@
+// JAVASCRIPT DE LA AGENDA
+document.getElementById('button__generalidades').onclick = function () {
+    event.preventDefault()
+    Swal.fire({
+        html: '<h3>Fechas:</h3><h4>Martes 12 de Noviembre</h4><h4>Jueves 14 de Noviembre</h4><br><br><h3>Lugar:</h3><h4>CPESS Los Santos, INA Se realizará en las instalaciones del Gimnasio del INA Los Santos</h4><br><br><h3>Participantes:</h3><h4>200 Participantes <br>Cupo limitado Personas agricultoras de aguacate y representantes del sector productivo de todo el país</h4>',
+        showCloseButton: true, // Muestra la X para cerrar
+        showConfirmButton: false // Oculta el botón de "OK"
+    });
+};
+document.getElementById('Nov12').onclick = function () {
+    event.preventDefault()
+    Swal.fire({
+        html: '<h3>Fechas:</h3><h4>Martes 12 de Noviembre</h4><h4>Jueves 14 de Noviembre</h4><br><br><h3>Lugar:</h3><h4>CPESS Los Santos, INA Se realizará en las instalaciones del Gimnasio del INA Los Santos</h4><br><br><h3>Participantes:</h3><h4>200 Participantes <br>Cupo limitado Personas agricultoras de aguacate y representantes del sector productivo de todo el país</h4>',
+        showCloseButton: true, // Muestra la X para cerrar
+        showConfirmButton: false // Oculta el botón de "OK"
+    });
+};
+document.getElementById('Nov13').onclick = function () {
+    event.preventDefault()
+    Swal.fire({
+        html: '<h3>Fechas:</h3><h4>Martes 12 de Noviembre</h4><h4>Jueves 14 de Noviembre</h4><br><br><h3>Lugar:</h3><h4>CPESS Los Santos, INA Se realizará en las instalaciones del Gimnasio del INA Los Santos</h4><br><br><h3>Participantes:</h3><h4>200 Participantes <br>Cupo limitado Personas agricultoras de aguacate y representantes del sector productivo de todo el país</h4>',
+        showCloseButton: true, // Muestra la X para cerrar
+        showConfirmButton: false // Oculta el botón de "OK"
+    });
+};
+document.getElementById('Nov14').onclick = function () {
+    event.preventDefault()
+    Swal.fire({
+        html: '<h3>Fechas:</h3><h4>Martes 12 de Noviembre</h4><h4>Jueves 14 de Noviembre</h4><br><br><h3>Lugar:</h3><h4>CPESS Los Santos, INA Se realizará en las instalaciones del Gimnasio del INA Los Santos</h4><br><br><h3>Participantes:</h3><h4>200 Participantes <br>Cupo limitado Personas agricultoras de aguacate y representantes del sector productivo de todo el país</h4>',
+        showCloseButton: true, // Muestra la X para cerrar
+        showConfirmButton: false // Oculta el botón de "OK"
+    });
+};
+//JAVASCRIPT DE LAS METRICAS
 let avisador = false; //Variable para controlar la animación
 window.addEventListener('scroll', function(){
     //necesito una constante que me guarde el circulo que va a rellenar o lo que va a cambiar
@@ -42,12 +76,46 @@ window.addEventListener('scroll', function(){
     },45); // Ahora de acuerdo con la estructura de interval se ajusta el tiempo en el que se ira viendo los cambios
     }
 });
+//JAVASCRIPT PARA LOS STANDS
+function showHide(button) {
+    const cardBody = button.closest('.card-body');
+    const showButton = cardBody.querySelector('.plus');
+    const hideButton = cardBody.querySelector('.hide');
+    const details = cardBody.querySelector('.details');
 
-
-
-
-
-
-
-
-
+    // Si se hizo clic en el botón de mostrar ("+")
+    if (button.classList.contains('plus')) {
+        // Mostrar los detalles
+        details.classList.add('show');
+        
+        // Cambiar la visibilidad de los botones
+        showButton.style.display = 'none';
+        hideButton.style.display = 'block';
+    } 
+    // Si se hizo clic en el botón de ocultar ("-")
+    else if (button.classList.contains('hide')) {
+        // Ocultar los detalles
+        details.classList.remove('show');
+        
+        // Cambiar la visibilidad de los botones
+        showButton.style.display = 'block';
+        hideButton.style.display = 'none';
+    }
+    
+    // Ocultar todos los demás detalles en otras tarjetas
+    const allCardBodies = document.querySelectorAll('.card-body');
+    allCardBodies.forEach((card) => {
+        if (card !== cardBody) {
+            const otherShowButton = card.querySelector('.plus');
+            const otherHideButton = card.querySelector('.hide');
+            const otherDetails = card.querySelector('.details');
+            
+            // Si hay detalles visibles en otras tarjetas, ocultarlos
+            if (otherDetails.classList.contains('show')) {
+                otherDetails.classList.remove('show');
+                otherShowButton.style.display = 'block';
+                otherHideButton.style.display = 'none';
+            }
+        }
+    });
+}
