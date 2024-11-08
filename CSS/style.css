@@ -2237,7 +2237,9 @@ footer a {
     .h2-agenda {
         font-size: 20px;
     }
-
+    .section-title{
+        font-size: 20px;
+    }
     .card-expositores {
         width: 230px;
         height: 385px;
